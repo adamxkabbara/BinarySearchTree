@@ -14,6 +14,9 @@
  *  left (BSTNode*): left child
  *  right (BSTNode*): right child
 ******************************************************************************/
+#ifndef BSTNODE_H
+#define BSTNODE_H
+
 template <class dataType>
 class BSTNode {
     public:
@@ -21,4 +24,13 @@ class BSTNode {
         BSTNode* right;
         BSTNode* left;
         BSTNode* parent;
+
+        BSTNode(dataType data, BSTNode* right = nullptr, 
+                BSTNode* left = nullptr, 
+                BSTNode* parent = nullptr) {
+            key = data;
+        }
+        dataType getKey() { return key; }
 };
+
+#endif
