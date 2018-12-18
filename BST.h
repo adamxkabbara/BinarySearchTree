@@ -61,13 +61,11 @@ class BST {
          *              found to remove.
          *Input:        data: the data to remove from the tree.            
          *Output:       Node.
-         *Result:       data is remove from the tree. If data to remove is not
-         *              found then nullptr is returned. Otherwise returns
-         *              pointer to the data removed from the tree.
-         *Return:       If found pointer to data is returned, otherwise
-         *              nullptr is returned.
+         *Result:       data is remove from the tree.
+         *Return:       Return true if found and removed from tree.
+         *              Return false if not found in tree
          */
-        dataType* Remove(dataType data);
+        bool Remove(dataType data);
 };
 
 #endif
